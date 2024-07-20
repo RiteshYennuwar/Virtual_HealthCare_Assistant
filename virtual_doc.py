@@ -4,7 +4,7 @@ from textblob import TextBlob
 from groq import Groq
 import os
 
-port = int(os.environ.get('PORT',8501))
+# port = int(os.environ.get('PORT',8501))
 
 st.set_page_config(page_icon="🏥", layout="wide", page_title="Virtual Doc!")
 
@@ -87,5 +87,5 @@ if st.button("Get Response"):
             st.session_state.messages.append({"role": "doctor", "content": combined_response})
 
 
-if __name__ == '__main__':
-    st.run(port=port)
+# if __name__ == '__main__':
+#     st.run(port=port)
