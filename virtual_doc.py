@@ -2,6 +2,9 @@ import streamlit as st
 from typing import Generator
 from textblob import TextBlob
 from groq import Groq
+import os
+
+port = int(os.environ.get('PORT',8501))
 
 st.set_page_config(page_icon="🏥", layout="wide", page_title="Virtual Doc!")
 
@@ -82,3 +85,7 @@ if st.button("Get Response"):
         else:
             combined_response = "\n".join(str(item) for item in full_response)
             st.session_state.messages.append({"role": "doctor", "content": combined_response})
+
+
+if __name__ == '__main__':
+    st.run(port=port)
