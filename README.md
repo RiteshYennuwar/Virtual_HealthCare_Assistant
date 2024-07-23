@@ -1,4 +1,4 @@
-# Disease Classification
+# Virtual HealthCare Assistant
 
 This repository contains the code to run an AI-powered assistant to provide medical advice, answer patient queries, and triage symptoms, enhancing patient engagement and care.
 
