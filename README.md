@@ -42,8 +42,6 @@ To get started with the project, follow these steps:
 
 After running the command, navigate to http://localhost:8501/ in your web browser to access the application.
 
-**Image Upload** : Make sure to upload an image of the chicken fecal matter that you suspect to have Coccidiosis disease for prediction.
-
 ## Docker Setup
 
 To containerize the application and run it using Docker, follow these steps:
